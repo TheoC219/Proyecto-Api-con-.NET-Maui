@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuaiApp.NewPage1"
+             Title="Login">
+    <ScrollView>
+        <VerticalStackLayout 
+    Padding="30,0"
+    Spacing="25">
+            <Entry x:Name="UsernameEntry" Placeholder="Nombre de usuario" FontSize="16" HorizontalOptions="FillAndExpand" />
+            <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" FontSize="16" HorizontalOptions="FillAndExpand" />
+            <Button Text="Iniciar sesión" Clicked="OnLoginClicked" BackgroundColor="#007AFF" TextColor="White" CornerRadius="5" HorizontalOptions="FillAndExpand" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

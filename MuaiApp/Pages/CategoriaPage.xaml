@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuaiApp.Pages.CategoriaPage"
+             Title="Clasificacion">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007bff"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Label 
+           Text="Categorias"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Label>Id clasificación:</Label>
+        <Entry x:Name="txtId"></Entry>
+        <Label>Clasificación:</Label>
+        <Entry x:Name="txtClasificacion"></Entry>
+
+        <Button x:Name="btnreate" Text="INSERTAR" Clicked="btnCreateCategory_Clicked"></Button>
+        <Button x:Name="btnRead" Text="LEER" Clicked="btnReadCategory_Clicked"></Button>
+        <Button x:Name="btnUpdate" Text="ACTUALIZAR" Clicked="btnUpdateCategory_Clicked"></Button>
+        <Button x:Name="btnDelete" Text="BORRAR" Clicked="btnDeleteCategory_Clicked"></Button>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>

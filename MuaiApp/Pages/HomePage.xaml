@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuaiApp.HomePage">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007bff"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout>
+        <Label x:Name="lblText" Text="Bienvenido"></Label>
+        <Button x:Name="btnProdcutos" Text="Productos" Clicked="btnProdcutos_Clicked"></Button>
+        <!--<Label Text="o"></Label>-->
+        <Button x:Name="btnClasificacion" Text="Clasificacion" Clicked="btnClasificacion_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

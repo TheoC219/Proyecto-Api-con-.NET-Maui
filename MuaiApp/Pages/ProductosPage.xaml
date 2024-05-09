@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuaiApp.Pages.ProductosPage"
+             Title="Productos">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007bff"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Label 
+            Text="Productos"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label>Id producto:</Label>
+        <Entry x:Name="txtIdProducto"></Entry>
+        <Label>Nombre producto:</Label>
+        <Entry x:Name="txtNombreProducto"></Entry>
+        <Label>Existencia:</Label>
+        <Entry x:Name="txtExistencia"></Entry>
+        <Label>Precio unitario:</Label>
+        <Entry x:Name="txtPrecioUnitario"></Entry>
+        <Label>IVA:</Label>
+        <Entry x:Name="txtIVA"></Entry>
+        <Label>iD Clasificaciòn:</Label>
+        <Entry x:Name="txtClasificacionId"></Entry>
+
+        <Button x:Name="btnCreateProd" Text="INSERTAR" Clicked="btnCreateProduct_Clicked"></Button>
+        <Button x:Name="btnReadProd" Text="LEER" Clicked="btnReadProduct_Clicked"></Button>
+        <Button x:Name="btnUpdateProd" Text="ACTUALIZAR" Clicked="btnUpdateProduct_Clicked"></Button>
+        <Button x:Name="btnDeleteProd" Text="BORRAR" Clicked="btnDeleteProduct_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
